@@ -1,0 +1,29 @@
+//
+
+class Kicker {
+    constructor(name,age,team,direction) {
+    this.name = name;
+    this.age = age;
+    this.team = team;
+    this.direction = direction;
+    }
+}
+
+const kickers = [
+    new Kicker('이강인❤️', 22, 'RCD Mallorca', 'L'),
+    new Kicker('조규성', 25, '전북 현대 모터스', 'C'),
+    new Kicker('황희찬', 27, 'Wolverhampton Wanderers FC', 'R'),
+    new Kicker('음바페', 26, 'Paris Saint-Germain FC', 'L'),
+    new Kicker('손흥민', 30, 'Tottenham Hotspur', 'L'),
+];
+
+// Q. 
+{
+    const result = kickers.find((kicker) => kicker.direction == 'L');
+    console.log(result);
+}
+
+{
+    const result = kickers.map((kicker) => kicker);
+    console.log(result);
+}
